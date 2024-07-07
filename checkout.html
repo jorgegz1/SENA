@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Facturación</h1>
+        </div>
+    </header>
+
+    <section id="checkout" class="checkout">
+        <div class="container">
+            <h2>Factura</h2>
+            <div class="invoice-items">
+                <p>No hay productos en el carrito.</p>
+            </div>
+            <div class="invoice-summary">
+                <h3>Total: $<span id="invoice-total">0</span></h3>
+                <button id="confirm-checkout">Confirmar Compra</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ferretería Online. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

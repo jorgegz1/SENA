@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Ferretería Online</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="cart.html">Carrito (3)</a></li>
+                    <li><a href="checkout.html">Facturación</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <section class="cart">
+            <div class="container">
+                <h2>Carrito de Compras</h2>
+                <div class="cart-item">
+                    <img src="images/taladro.jpg" alt="Taladro">
+                    <div class="cart-item-details">
+                        <p>Taladro</p>
+                        <p>Precio: $50.000</p>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="images/martillo.jpg" alt="Martillo">
+                    <div class="cart-item-details">
+                        <p>Martillo</p>
+                        <p>Precio: $20.000</p>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="images/llave-inglesa.jpg" alt="Llave Inglesa">
+                    <div class="cart-item-details">
+                        <p>Llave Inglesa</p>
+                        <p>Precio: $15.000</p>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <p>Total: $85.000</p>
+                </div>
+                <button onclick="location.href='checkout.html'">Proceder a la Facturación</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ferretería Online. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería del Software</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Ferretería del Software</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="cart.html">Carrito (0)</a></li>
+                    <li><a href="checkout.html">Facturación</a></li>
+                </ul>
+                <!-- Botón para mostrar/ocultar la barra lateral -->
+                    <button id="toggleSidebar">Mostrar/Ocultar Carrito</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <h2>Carrito de Compras</h2>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <p>Total: $0</p>
+            </div>
+        </aside>
+        
+
+        <!-- Contenido -->
+        <div class="content">
+            <section class="intro">
+                <div class="container">
+                    <h2>Bienvenido a la Ferretería del Software</h2>
+                    <p>Encuentra todo lo que necesitas para tus proyectos de construcción y bricolaje.</p>
+                </div>
+            </section>
+
+            <section class="products">
+                <div class="container">
+                    <h2>Nuestros Productos</h2>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <img src="img/Taladro.jpg" alt="Taladro">
+                            <h3>Taladro</h3>
+                            <p>Precio: $50.000</p>
+                            <button class="add-to-cart" data-product="Taladro" data-price="50000">Agregar al carrito</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/Martillo.jpg" alt="Martillo">
+                            <h3>Martillo</h3>
+                            <p>Precio: $20.000</p>
+                            <button class="add-to-cart" data-product="Martillo" data-price="20000">Agregar al carrito</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/Llave inglesa.jpg" alt="Llave Inglesa">
+                            <h3>Llave Inglesa</h3>
+                            <p>Precio: $15.000</p>
+                            <button class="add-to-cart" data-product="Llave Inglesa" data-price="15000">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="container">
+                    <h2>Sobre Nosotros</h2>
+                    <p>Somos una ferretería con x años de experiencia, ofreciendo productos de calidad y servicio excepcional.</p>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="container">
+                    <h2>Contacto</h2>
+                    <form>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message"></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ferretería del Software. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
